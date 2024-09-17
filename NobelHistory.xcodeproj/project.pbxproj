@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DAD0BC42C8A7C470028B8DB /* MockNobelPrizeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD0BC32C8A7C470028B8DB /* MockNobelPrizeService.swift */; };
+		3DAD0C3C2C8E3C250028B8DB /* NobelPrizeDataRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD0C3B2C8E3C250028B8DB /* NobelPrizeDataRepositoryTests.swift */; };
+		3DAD0C3E2C8E52110028B8DB /* NobelPrizesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD0C3D2C8E52110028B8DB /* NobelPrizesViewModelTests.swift */; };
+		E8BA01812C89AA5100EA9D2E /* NobelPrizeListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BA01802C89AA5100EA9D2E /* NobelPrizeListDetailViewController.swift */; };
+		EF0290712ABC5FF900563170 /* NobelPrizesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0290702ABC5FF900563170 /* NobelPrizesViewModel.swift */; };
+		EF57A2C62ABB4D780061DEE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF57A2C52ABB4D780061DEE1 /* AppDelegate.swift */; };
+		EF57A2C82ABB4D780061DEE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF57A2C72ABB4D780061DEE1 /* SceneDelegate.swift */; };
+		EF57A2CD2ABB4D780061DEE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF57A2CB2ABB4D780061DEE1 /* Main.storyboard */; };
+		EF57A2CF2ABB4D7B0061DEE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF57A2CE2ABB4D7B0061DEE1 /* Assets.xcassets */; };
+		EF57A2D22ABB4D7B0061DEE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF57A2D02ABB4D7B0061DEE1 /* LaunchScreen.storyboard */; };
+		EF71E9122ABB4EC800D97638 /* NobelPrizesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71E9112ABB4EC800D97638 /* NobelPrizesCollectionViewController.swift */; };
+		EF71E9142ABB4F0E00D97638 /* NobelPrizeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71E9132ABB4F0E00D97638 /* NobelPrizeService.swift */; };
+		EF71E9172ABB4FAE00D97638 /* NobelPrizeDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71E9162ABB4FAE00D97638 /* NobelPrizeDataModels.swift */; };
+		EF71E9192ABB50AC00D97638 /* NobelPrizeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71E9182ABB50AC00D97638 /* NobelPrizeDataRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF57A2D92ABB4D7B0061DEE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF57A2BA2ABB4D780061DEE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF57A2C12ABB4D780061DEE1;
+			remoteInfo = NobelHistory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DAD0BC32C8A7C470028B8DB /* MockNobelPrizeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNobelPrizeService.swift; sourceTree = "<group>"; };
+		3DAD0C3B2C8E3C250028B8DB /* NobelPrizeDataRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizeDataRepositoryTests.swift; sourceTree = "<group>"; };
+		3DAD0C3D2C8E52110028B8DB /* NobelPrizesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizesViewModelTests.swift; sourceTree = "<group>"; };
+		E8BA01802C89AA5100EA9D2E /* NobelPrizeListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizeListDetailViewController.swift; sourceTree = "<group>"; };
+		EF0290702ABC5FF900563170 /* NobelPrizesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizesViewModel.swift; sourceTree = "<group>"; };
+		EF57A2C22ABB4D780061DEE1 /* NobelHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NobelHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF57A2C52ABB4D780061DEE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF57A2C72ABB4D780061DEE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF57A2CC2ABB4D780061DEE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF57A2CE2ABB4D7B0061DEE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF57A2D12ABB4D7B0061DEE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF57A2D32ABB4D7B0061DEE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF57A2D82ABB4D7B0061DEE1 /* NobelHistoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobelHistoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF71E9112ABB4EC800D97638 /* NobelPrizesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizesCollectionViewController.swift; sourceTree = "<group>"; };
+		EF71E9132ABB4F0E00D97638 /* NobelPrizeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizeService.swift; sourceTree = "<group>"; };
+		EF71E9162ABB4FAE00D97638 /* NobelPrizeDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizeDataModels.swift; sourceTree = "<group>"; };
+		EF71E9182ABB50AC00D97638 /* NobelPrizeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizeDataRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF57A2BF2ABB4D780061DEE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF57A2D52ABB4D7B0061DEE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8BA017D2C89A9F500EA9D2E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF71E9112ABB4EC800D97638 /* NobelPrizesCollectionViewController.swift */,
+				E8BA01802C89AA5100EA9D2E /* NobelPrizeListDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E8BA017E2C89A9FE00EA9D2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF0290702ABC5FF900563170 /* NobelPrizesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E8BA017F2C89AA2400EA9D2E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF71E9132ABB4F0E00D97638 /* NobelPrizeService.swift */,
+				EF71E9182ABB50AC00D97638 /* NobelPrizeDataRepository.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF57A2B92ABB4D780061DEE1 = {
+			isa = PBXGroup;
+			children = (
+				EF57A2C42ABB4D780061DEE1 /* NobelHistory */,
+				EF57A2DB2ABB4D7B0061DEE1 /* NobelHistoryTests */,
+				EF57A2C32ABB4D780061DEE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF57A2C32ABB4D780061DEE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF57A2C22ABB4D780061DEE1 /* NobelHistory.app */,
+				EF57A2D82ABB4D7B0061DEE1 /* NobelHistoryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF57A2C42ABB4D780061DEE1 /* NobelHistory */ = {
+			isa = PBXGroup;
+			children = (
+				E8BA017F2C89AA2400EA9D2E /* Network */,
+				E8BA017E2C89A9FE00EA9D2E /* ViewModel */,
+				E8BA017D2C89A9F500EA9D2E /* ViewControllers */,
+				EF71E9152ABB4F3100D97638 /* Data */,
+				EF57A2C52ABB4D780061DEE1 /* AppDelegate.swift */,
+				EF57A2C72ABB4D780061DEE1 /* SceneDelegate.swift */,
+				EF57A2CB2ABB4D780061DEE1 /* Main.storyboard */,
+				EF57A2CE2ABB4D7B0061DEE1 /* Assets.xcassets */,
+				EF57A2D02ABB4D7B0061DEE1 /* LaunchScreen.storyboard */,
+				EF57A2D32ABB4D7B0061DEE1 /* Info.plist */,
+			);
+			path = NobelHistory;
+			sourceTree = "<group>";
+		};
+		EF57A2DB2ABB4D7B0061DEE1 /* NobelHistoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DAD0BC32C8A7C470028B8DB /* MockNobelPrizeService.swift */,
+				3DAD0C3B2C8E3C250028B8DB /* NobelPrizeDataRepositoryTests.swift */,
+				3DAD0C3D2C8E52110028B8DB /* NobelPrizesViewModelTests.swift */,
+			);
+			path = NobelHistoryTests;
+			sourceTree = "<group>";
+		};
+		EF71E9152ABB4F3100D97638 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF71E9162ABB4FAE00D97638 /* NobelPrizeDataModels.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF57A2C12ABB4D780061DEE1 /* NobelHistory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF57A2EC2ABB4D7B0061DEE1 /* Build configuration list for PBXNativeTarget "NobelHistory" */;
+			buildPhases = (
+				EF57A2BE2ABB4D780061DEE1 /* Sources */,
+				EF57A2BF2ABB4D780061DEE1 /* Frameworks */,
+				EF57A2C02ABB4D780061DEE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NobelHistory;
+			productName = NobelHistory;
+			productReference = EF57A2C22ABB4D780061DEE1 /* NobelHistory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF57A2D72ABB4D7B0061DEE1 /* NobelHistoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF57A2EF2ABB4D7B0061DEE1 /* Build configuration list for PBXNativeTarget "NobelHistoryTests" */;
+			buildPhases = (
+				EF57A2D42ABB4D7B0061DEE1 /* Sources */,
+				EF57A2D52ABB4D7B0061DEE1 /* Frameworks */,
+				EF57A2D62ABB4D7B0061DEE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF57A2DA2ABB4D7B0061DEE1 /* PBXTargetDependency */,
+			);
+			name = NobelHistoryTests;
+			productName = NobelHistoryTests;
+			productReference = EF57A2D82ABB4D7B0061DEE1 /* NobelHistoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF57A2BA2ABB4D780061DEE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EF57A2C12ABB4D780061DEE1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					EF57A2D72ABB4D7B0061DEE1 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EF57A2C12ABB4D780061DEE1;
+					};
+				};
+			};
+			buildConfigurationList = EF57A2BD2ABB4D780061DEE1 /* Build configuration list for PBXProject "NobelHistory" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF57A2B92ABB4D780061DEE1;
+			productRefGroup = EF57A2C32ABB4D780061DEE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF57A2C12ABB4D780061DEE1 /* NobelHistory */,
+				EF57A2D72ABB4D7B0061DEE1 /* NobelHistoryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF57A2C02ABB4D780061DEE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF57A2D22ABB4D7B0061DEE1 /* LaunchScreen.storyboard in Resources */,
+				EF57A2CF2ABB4D7B0061DEE1 /* Assets.xcassets in Resources */,
+				EF57A2CD2ABB4D780061DEE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF57A2D62ABB4D7B0061DEE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF57A2BE2ABB4D780061DEE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF57A2C62ABB4D780061DEE1 /* AppDelegate.swift in Sources */,
+				EF57A2C82ABB4D780061DEE1 /* SceneDelegate.swift in Sources */,
+				EF71E9122ABB4EC800D97638 /* NobelPrizesCollectionViewController.swift in Sources */,
+				E8BA01812C89AA5100EA9D2E /* NobelPrizeListDetailViewController.swift in Sources */,
+				EF71E9142ABB4F0E00D97638 /* NobelPrizeService.swift in Sources */,
+				EF71E9172ABB4FAE00D97638 /* NobelPrizeDataModels.swift in Sources */,
+				EF71E9192ABB50AC00D97638 /* NobelPrizeDataRepository.swift in Sources */,
+				EF0290712ABC5FF900563170 /* NobelPrizesViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF57A2D42ABB4D7B0061DEE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAD0C3C2C8E3C250028B8DB /* NobelPrizeDataRepositoryTests.swift in Sources */,
+				3DAD0C3E2C8E52110028B8DB /* NobelPrizesViewModelTests.swift in Sources */,
+				3DAD0BC42C8A7C470028B8DB /* MockNobelPrizeService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF57A2DA2ABB4D7B0061DEE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF57A2C12ABB4D780061DEE1 /* NobelHistory */;
+			targetProxy = EF57A2D92ABB4D7B0061DEE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF57A2CB2ABB4D780061DEE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF57A2CC2ABB4D780061DEE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF57A2D02ABB4D7B0061DEE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF57A2D12ABB4D7B0061DEE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF57A2EA2ABB4D7B0061DEE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF57A2EB2ABB4D7B0061DEE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF57A2ED2ABB4D7B0061DEE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8AJ43JT69Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NobelHistory/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cubic.mticket.NobelHistory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF57A2EE2ABB4D7B0061DEE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8AJ43JT69Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NobelHistory/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cubic.mticket.NobelHistory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF57A2F02ABB4D7B0061DEE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8AJ43JT69Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cubic.mticket.NobelHistoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NobelHistory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NobelHistory";
+			};
+			name = Debug;
+		};
+		EF57A2F12ABB4D7B0061DEE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8AJ43JT69Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cubic.mticket.NobelHistoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NobelHistory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NobelHistory";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF57A2BD2ABB4D780061DEE1 /* Build configuration list for PBXProject "NobelHistory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF57A2EA2ABB4D7B0061DEE1 /* Debug */,
+				EF57A2EB2ABB4D7B0061DEE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF57A2EC2ABB4D7B0061DEE1 /* Build configuration list for PBXNativeTarget "NobelHistory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF57A2ED2ABB4D7B0061DEE1 /* Debug */,
+				EF57A2EE2ABB4D7B0061DEE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF57A2EF2ABB4D7B0061DEE1 /* Build configuration list for PBXNativeTarget "NobelHistoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF57A2F02ABB4D7B0061DEE1 /* Debug */,
+				EF57A2F12ABB4D7B0061DEE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF57A2BA2ABB4D780061DEE1 /* Project object */;
+}
