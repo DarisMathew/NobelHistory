@@ -2,7 +2,7 @@
 
 ## Overview
 
-This iOS app displays a list of Nobel Prize laureates, retrieving data from a public API. The app presents the first laureate per year and category for simplicity. The challenge involves improving this app by adding user interaction, infinite scrolling, and filtering functionalities, without using third-party libraries unless explicitly permitted.
+This iOS app displays a list of Nobel Prize laureates, retrieving data from a public API. The app presents the first laureate per year and category for simplicity. The challenge focuses on enhancing the app by implementing user interactions, infinite scrolling, and filtering capabilities, while following modern iOS development best practices.
 
 **API Documentation**: [SwaggerHub - Nobel Prize API](https://app.swaggerhub.com/apis/NobelMedia/NobelMasterData/2.0#/default/get_nobelPrizes)
 
@@ -15,67 +15,53 @@ This iOS app displays a list of Nobel Prize laureates, retrieving data from a pu
 2. **Open the project** in Xcode.
 3. **Build and run** the app on a simulator or physical device.
 
-## Tasks
+## Features and Enhancements
 
-### Task 1: Branch Setup
+### Laureate Details View
 
-1. Create and checkout a new branch named `<your-initials>-code-challenge-2-ios` (e.g., `ld-code-challenge-2-ios`).
-2. Push this branch to the origin:
-    ```bash
-    git push -u origin <your-branch-name>
-    ```
+The app allows users to tap on a laureate in the list, which navigates them to a detailed view displaying information about the selected laureate. The details view shows:
 
----
+- Name
+- Gender
+- Date and place of birth
+- Date and place of death (if applicable)
 
-### Task 2: Display Laureate Details
+This enhances the user experience by providing more in-depth information for each Nobel laureate.
 
-1. Enhance the app so that tapping on a laureate in the list pushes a new view controller that displays laureate details.
-2. Details should include:
-    - Name
-    - Gender
-    - Date and place of birth
-    - Date and place of death (if applicable)
-3. Commit and push your changes.
+### Infinite Scrolling
 
----
+To improve usability when browsing through the laureates, the app implements infinite scrolling. As users reach the end of the current list, the app automatically loads more laureates from the API using pagination. The API’s `offset` and `limit` parameters are used to control this behavior, ensuring that additional data is fetched seamlessly and appended to the list.
 
-### Task 3: Infinite Scroll
+### Filter by Category
 
-1. Implement infinite scrolling in the laureates list.
-    - Use the API's `offset` and `limit` parameters to fetch more laureates as the user scrolls down.
-    - Ensure that new data is appended to the existing list without resetting the view.
-2. Commit and push your work.
+A filter feature has been added to the navigation bar. By tapping the filter button, users can select one of the following Nobel Prize categories:
 
----
+- Chemistry (`che`)
+- Economics (`eco`)
+- Literature (`lit`)
+- Peace (`pea`)
+- Physics (`phy`)
+- Medicine (`med`)
+- All (no filter)
 
-### Task 4: Filter Laureates by Category
-
-1. Add a filter button to the navigation bar.
-2. Tapping the filter button should display a sheet view that allows users to filter by category:
-    - Chemistry (`che`)
-    - Economics (`eco`)
-    - Literature (`lit`)
-    - Peace (`pea`)
-    - Physics (`phy`)
-    - Medicine (`med`)
-    - All (no filter)
-3. After a selection, the sheet should close, and a new API request should be made with the selected category as a filter.
-4. Commit and push your changes.
-
----
+Selecting a category will close the filter sheet and trigger a new API request to display laureates from the chosen category. This adds more flexibility and control for users who are interested in specific Nobel Prize fields.
 
 ## Key Technologies Used
 
 - **Swift**: The primary language for development.
-- **UIKit**: Used for building the app's UI components.
-- **URLSession**: For making HTTP requests to fetch Nobel Prize laureate data.
-- **MVVM**: The Model-View-ViewModel architecture is used to separate concerns and keep the code modular and testable.
+- **UIKit**: Used to build the app's user interface components.
+- **URLSession**: Handles network requests to fetch Nobel Prize laureate data from the API.
+- **MVVM Architecture**: The app follows the Model-View-ViewModel pattern to ensure separation of concerns and better maintainability.
 
-## Future Improvements
+## Future Enhancements
 
-Here are some additional enhancements that could be implemented with more time:
-- **Unit and UI Testing**: Expanding test coverage, especially for networking and UI interactions.
-- **Error Handling**: Display more user-friendly error messages for network issues (e.g., no internet).
-- **Caching**: Implement data caching to reduce network calls when the user revisits previously loaded data.
-- **Design Enhancements**: Improve UI/UX for a more polished and interactive experience.
+Here are some potential areas for future improvements:
 
+- **Unit and UI Testing**: Expanding test coverage, especially for networking, infinite scrolling, and the filtering feature.
+- **Error Handling**: Improve user-facing error messages and handling for network-related issues (e.g., retry options or offline support).
+- **Data Caching**: Implement local data caching to reduce network calls and improve performance when revisiting previously loaded data.
+- **UI/UX Improvements**: Refine the visual design and transitions to create a smoother and more polished user experience.
+
+---
+
+This project serves as a foundation for creating a more interactive and feature-rich Nobel Prize app. The focus is on functionality, clean architecture, and user experience enhancements such as infinite scrolling and category-based filtering.
